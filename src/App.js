@@ -11,7 +11,7 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      etst: test
+     
     };
 
     // in your constructor, add this binding
@@ -35,8 +35,8 @@ class App extends React.Component {
     //var opacity = pctScrolled;
     console.log(pctScrolled + '% scrolled')
 
-    if (pctScrolled === 0) {
-        $(".fade-bg").css("background-color", "red")
+    if (pctScrolled < 20) {
+        $(".fade-bg").css("background-color", "white")
     }
 
     if (pctScrolled >= '20') {
