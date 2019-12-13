@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-
+import xlogo from './img/x-light.png';
 
 function Navbar(props) {
     return <div className="header-container">
                 <img className="x-logo"
-                    src="/img/x-light.png"
+                    src={xlogo}
                     alt=""></img>
                 <div className="collapsible-menu">
                     <div className="menu-content">
