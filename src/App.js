@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './navbar';
-import LogoLoad from './logo-load';
+
 
 var $ = require("jquery");
 
@@ -69,7 +69,6 @@ class App extends React.Component {
       <div className="App">
          <Navbar></Navbar>
          <div className="content">
-          <LogoLoad></LogoLoad>
             <div className="section section1">
                 <h1 className="radical-text text1">WE CREATE RADICAL NEW TECHNOLOGIES TO SOLVE SOME OF THE WORLD’S
                     HARDEST PROBLEMS</h1>

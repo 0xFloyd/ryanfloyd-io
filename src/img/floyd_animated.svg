@@ -1,8 +1,13 @@
-<!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+              "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 
-
-<svg xmlns="http://www.w3.org/2000/svg" width="11in" height="8.5in" viewBox="0 0 1100 850" style="">
-  <path id="Selection" fill="none" stroke="black" stroke-width="1" d="M 972.00,62.00
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="11in" height="8.5in"
+     viewBox="0 0 1100 850">
+  <path id="Selection"
+        fill="none" stroke="black" stroke-width="1"
+        d="M 972.00,62.00
            C 972.00,62.00 934.58,114.00 934.58,114.00
              934.58,114.00 918.84,138.00 918.84,138.00
              918.84,138.00 918.84,152.00 918.84,152.00
@@ -129,5 +134,5 @@
              611.00,471.00 552.00,471.00 552.00,471.00
              552.00,471.00 569.13,446.00 569.13,446.00
              569.13,446.00 611.00,389.00 611.00,389.00
-             611.00,389.00 613.00,389.00 613.00,389.00 Z" class="LGrRcYOt_0"></path>
-<style data-made-with="vivus-instant">.LGrRcYOt_0{stroke-dasharray:6880 6882;stroke-dashoffset:6881;animation:LGrRcYOt_draw 2000ms linear 0ms forwards;}@keyframes LGrRcYOt_draw{100%{stroke-dashoffset:0;}}@keyframes LGrRcYOt_fade{0%{stroke-opacity:1;}93.54838709677419%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>
+             611.00,389.00 613.00,389.00 613.00,389.00 Z" />
+</svg>
