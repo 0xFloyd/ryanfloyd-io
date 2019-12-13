@@ -11,7 +11,7 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-    
+      test: test
     };
 
     // in your constructor, add this binding
