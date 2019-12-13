@@ -103,13 +103,12 @@ ul, li {
 #floyd-logo-vivus {
   height: 100px;
   fill-opacity: 0;
-  transition: fill-opacity 1s;
-  fill: green;
+  transition: fill-opacity 3s;
+ 
 }
 
 #floyd-logo-vivus.finished * {
   fill-opacity: 1;
-  fill: green;
 } 
 
 .logo-load-container {

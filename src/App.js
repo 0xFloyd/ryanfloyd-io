@@ -3,8 +3,9 @@ import './App.css';
 import Navbar from './navbar';
 
 
-var $ = require("jquery");
 
+
+var $ = require("jquery");
 
 
 class App extends React.Component {
@@ -26,6 +27,7 @@ class App extends React.Component {
     return bgColor;
   }
  
+
   amountscrolled() {
     var winheight = $(window).height()  // get height of browser window 
     var docheight = $(document).height()        //  height of the entire document (whole scroll area)
@@ -62,29 +64,27 @@ class App extends React.Component {
   componentDidMount() {
     window.addEventListener('scroll', this.amountscrolled, true);
   }
-
+ 
  
   render() {
     return (
-      <div className="App">
-         <Navbar></Navbar>
-         <div className="content">
-            <div className="section section1">
-                <h1 className="radical-text text1">WE CREATE RADICAL NEW TECHNOLOGIES TO SOLVE SOME OF THE WORLD’S
-                    HARDEST PROBLEMS</h1>
-            </div>
-            <div className="section section2">
-                <h1 className="radical-text text2">WE CREATE RADICAL NEW TECHNOLOGIES TO SOLVE SOME OF THE WORLD’S
-                    HARDEST PROBLEMS</h1>
-            </div>
-            <div className="section section3">
-                <h1 className="radical-text">WE CREATE RADICAL NEW TECHNOLOGIES TO SOLVE SOME OF THE WORLD’S
-                    HARDEST PROBLEMS</h1>
-            </div>
-            <div className="fade-bg">
+        <div className="App">
+          <Navbar></Navbar>
+          <div className="content">
+              <div className="section">
+              </div>
+              <div className="section section2">
+                  <h1 className="radical-text text2">WE CREATE RADICAL NEW TECHNOLOGIES TO SOLVE SOME OF THE WORLD’S
+                      HARDEST PROBLEMS</h1>
+              </div>
+              <div className="section section3">
+                  <h1 className="radical-text">WE CREATE RADICAL NEW TECHNOLOGIES TO SOLVE SOME OF THE WORLD’S
+                      HARDEST PROBLEMS</h1>
+              </div>
+              <div className="fade-bg">
 
-            </div>
-        </div>
+              </div>
+          </div>
       </div>
     );
   }

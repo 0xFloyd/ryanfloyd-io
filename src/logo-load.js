@@ -18,9 +18,7 @@ class LogoLoad extends React.Component {
   }
    
     componentDidMount() {
-        new Vivus('floyd-logo-vivus', { duration: 1000, file: FloydLogo }, function (obj) {
-            obj.el.classList.add('finished');
-        });
+        new Vivus('floyd-logo-vivus', { duration: 2000, file: FloydLogo});
     }
   
    
