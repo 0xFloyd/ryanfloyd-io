@@ -42,7 +42,7 @@ class App extends React.Component {
         $(".fade-bg").css("background-color", "white")
     }
 
-    if (pctScrolled >= '20') {
+    if (pctScrolled >= 20) {
         $(".fade-bg").css("background-color", "red")
     }
 

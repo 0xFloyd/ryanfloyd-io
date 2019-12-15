@@ -22,23 +22,38 @@ ul, li {
 .header-container {
   display: grid;
   grid-template-columns: 20% 75% 5%;
-  height: 10%;
+  height: 60px;
   margin: 0px;
   padding: 0px;
+  width: 100%;
+  background-color: rgba(211, 211, 211, 0.212);
+  position: fixed;
+}
+
+
+.collapsible-menu {
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+}
+
+.menu-content {
+  display: flex;
+  align-content: center;
 }
 
 .menu-list {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .menu-item {
   padding: 0px 0px 0px 40px;
    align-self: center;
-   color: white;
+   color: black;
+   font-size: 2em;
 }
-
-
 
 .menu-dot {
   color: rgb(255, 230, 5);
@@ -102,9 +117,10 @@ ul, li {
 
 #floyd-logo-vivus {
   height: 100px;
-  fill-opacity: 0;
-  transition: fill-opacity 3s;
- 
+  fill-opacity: 1;
+  transition: fill-opacity 5s;
+  padding: 0px;
+  margin: 0px;
 }
 
 #floyd-logo-vivus.finished * {
@@ -112,5 +128,31 @@ ul, li {
 } 
 
 .logo-load-container {
-  height: auto;
+  padding: 0px;
+  margin: -10px;
 }
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+ }
+
+/*  Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .logo-load-container {
+    padding: 8px;
+    
+  }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+ }
