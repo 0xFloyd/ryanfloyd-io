@@ -54,7 +54,7 @@
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      "speed": 4,
       "direction": "top",
       "random": false,
       "straight": false,
@@ -99,7 +99,7 @@
         "duration": 0.4
       },
       "push": {
-        "particles_nb": 4
+        "particles_nb": 12
       },
       "remove": {
         "particles_nb": 2
