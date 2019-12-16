@@ -3,6 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Ubuntu Mono', monospace;
+  background-color: rgb(83, 83, 83);
 }
 
 h1 {
@@ -22,14 +23,26 @@ ul, li {
 .header-container {
   display: grid;
   grid-template-columns: 20% 75% 5%;
-  height: 60px;
   margin: 0px;
   padding: 0px;
   width: 100%;
-  background-color: rgba(211, 211, 211, 0.212);
   position: fixed;
+  place-items: center;
+  height: 60px;
 }
 
+.menu-icon {
+  display: flex;
+  color: red;
+  justify-self: end;
+  justify-items: center;
+  font-size: 24px;
+}
+
+#fa-menu-icon {
+  justify-self: end;
+  align-self: center;
+}
 
 .collapsible-menu {
   display: flex;
@@ -71,11 +84,13 @@ ul, li {
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;
+  
 }
 
 .section {
   height: 100vh;
   display: grid;
+  background-color: 0 0 0 0;
   
 }
 
@@ -91,6 +106,7 @@ ul, li {
 
 .radical-text {
   color: grey;
+  white-space: normal;
 }
 
 .radical-text.text1 {
@@ -105,38 +121,39 @@ ul, li {
 
 
 .fade-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: white;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: .5;
+ 
+  
+}
+
+.logo-load-container {
+  padding: 0px;
+ margin: 0px;
+ min-height: 100px;
 }
 
 #floyd-logo-vivus {
-  height: 100px;
   fill-opacity: 1;
   transition: fill-opacity 5s;
   padding: 0px;
   margin: 0px;
+  min-height: 100px;
 }
 
 #floyd-logo-vivus.finished * {
   fill-opacity: 1;
 } 
 
-.logo-load-container {
-  padding: 0px;
-  margin: -10px;
+#floyd-logo-outline {
+  height: 80px;
+  position: fixed;
+  left: 20px;
+  top: 10px;
 }
-
 
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
-
+  
  }
 
 /* Medium devices (tablets, 768px and up) */
@@ -146,9 +163,11 @@ ul, li {
 
 /*  Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  .logo-load-container {
-    padding: 8px;
-    
+  #floyd-logo-outline {
+    height: 80px;
+    position: fixed;
+    left: 40px;
+    top: 10px;
   }
  }
 

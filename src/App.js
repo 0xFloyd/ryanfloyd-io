@@ -1,9 +1,12 @@
 import React from 'react';
 import './App.css';
 import Navbar from './navbar';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faCoffee } from '@fortawesome/free-solid-svg-icons';
+//import LogoLoad from './logo-load';
 
-
-
+library.add(fas, faBars, faCoffee)
 
 var $ = require("jquery");
 
@@ -39,26 +42,26 @@ class App extends React.Component {
     console.log(pctScrolled + '% scrolled')
 
     if (pctScrolled < 20) {
-        $(".fade-bg").css("background-color", "white")
+        $(".content").css("background-color", "white")
     }
 
     if (pctScrolled >= 20) {
-        $(".fade-bg").css("background-color", "red")
+        $(".content").css("background-color", "red")
     }
 
     if (pctScrolled >= 40) {
-        $(".fade-bg").css("background-color", "blue")
+        $(".content").css("background-color", "blue")
     }
 
     if (pctScrolled >= 60) {
-        $(".fade-bg").css("background-color", "green")
+        $(".content").css("background-color", "green")
     }
 
     if (pctScrolled >= 80) {
-        $(".fade-bg").css("background-color", "yellow")
+        $(".content").css("background-color", "yellow")
     }
-    //$(".fade-bg").css("opacity", opacity);
-    //$(".fade-bg").css("background-color", random_bg_color())
+    //$(".content").css("opacity", opacity);
+    //$(".content").css("background-color", random_bg_color())
   }
 
   componentDidMount() {
@@ -68,24 +71,35 @@ class App extends React.Component {
  
   render() {
     return (
-        <div className="App">
-          <Navbar></Navbar>
-          <div className="content">
-              <div className="section">
+        <div className="content">
+            <Navbar></Navbar>
+            <div className="section section2">
+                <h1 className="radical-text text2">WE CREATE RADICAL NEW TECHNOLOGIES TO SOLVE SOME OF THE WORLD’S
+                    HARDEST PROBLEMS</h1>
+            </div>
+           
+        <div className="content">
+          <div className="section">
+                  
               </div>
-              <div className="section section2">
-                  <h1 className="radical-text text2">WE CREATE RADICAL NEW TECHNOLOGIES TO SOLVE SOME OF THE WORLD’S
-                      HARDEST PROBLEMS</h1>
+        </div>
+        <div className="content">
+          <div className="section">
+                  
               </div>
-              <div className="section section3">
-                  <h1 className="radical-text">WE CREATE RADICAL NEW TECHNOLOGIES TO SOLVE SOME OF THE WORLD’S
-                      HARDEST PROBLEMS</h1>
+        </div>
+        <div className="content">
+          <div className="section">
+                  
               </div>
-              <div className="fade-bg">
+        </div>
+        <div className="content">
+          <div className="section">
+                  
+              </div>
+        </div>
+        </div>
 
-              </div>
-          </div>
-      </div>
     );
   }
 }
