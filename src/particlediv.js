@@ -1,38 +1,21 @@
-import 'particles.js/particles';
 import React from 'react';
 import './App.css';
-import particles from 'exports?particlesJS=window.particlesJS,window.pJSDom!particles.js';
-const particlesJS = window.particlesJS;
+import Particles from 'react-particles-js';
+import ParticleConfigFile from './particlesjs-config.json';
+
+const ParticleConfig = ParticleConfigFile;
 
 
-particles.particlesJS.load('particles-js', '../public/particlesjs-config.json', function() {
-    console.log('callback - particles.js config loaded');
-  });
-
-
-class Particles extends React.Component {
-    constructor(props) {
-        super(props);
-    
-        this.state = {
-         
-        };
-    }
-
-    componentDidMount(){
-        //particles.js github page says to load package like so:
-        particlesJS.load('particles-js', 'assets/particles.json', function() {
-            console.log('callback - particles.js config loaded');
-        });
-    }
-        
+class ParticlesDiv extends React.Component {
     render() {
         return (
-            <div>
-                <div id="particles-js"></div>
-            </div>
+           
+              <Particles 
+                params={ParticleConfig} id="particles-id"
+              />
+           
     );
 }
 }
 
-export default Particles;
+export default ParticlesDiv;
