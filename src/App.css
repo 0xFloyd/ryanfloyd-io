@@ -155,6 +155,11 @@ ul, li {
   top: 10px;
 }
 
+#hello-ryan {
+  position: fixed;
+  bottom: 20%;
+  left: 10%;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
