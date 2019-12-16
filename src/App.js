@@ -84,9 +84,10 @@ class App extends React.Component {
               </div>
         </div>
         <div className="content">
-          <div className="section">
-                  
-              </div>
+          <div className="section section2">
+            <h1 className="radical-text text2">WE CREATE RADICAL NEW TECHNOLOGIES TO SOLVE SOME OF THE WORLD’S
+                      HARDEST PROBLEMS</h1>
+                </div>
         </div>
         <div className="content">
           <div className="section">

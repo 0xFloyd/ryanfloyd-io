@@ -29,14 +29,20 @@ ul, li {
   position: fixed;
   place-items: center;
   height: 60px;
+  
 }
 
 .menu-icon {
   display: flex;
-  color: red;
+  color: grey;
   justify-self: end;
   justify-items: center;
-  font-size: 24px;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.menu-icon:hover {
+  cursor:pointer;
 }
 
 #fa-menu-icon {
@@ -100,8 +106,8 @@ ul, li {
 }
 
 .section.section2 {
-  grid-template-columns: 10% 40% 50%;
-  grid-template-rows: 70% 30%;
+  grid-template-columns: 10% 70% 20%;
+  grid-template-rows: 90% 30%;
 }
 
 .radical-text {
@@ -109,14 +115,12 @@ ul, li {
   white-space: normal;
 }
 
-.radical-text.text1 {
-  justify-self: start;
-  grid-area: 2 / 2 / 2 / 2
-}
+
 
 .radical-text.text2 {
-  justify-self: start;
-  grid-area: 2 / 2 / 2 / 2
+  font-size: 2em;
+  grid-area: 1 / 2 / 2 / 2;
+  align-self: end;
 }
 
 
@@ -144,7 +148,7 @@ ul, li {
 } 
 
 #floyd-logo-outline {
-  height: 80px;
+  height: 60px;
   position: fixed;
   left: 20px;
   top: 10px;
@@ -169,6 +173,22 @@ ul, li {
     left: 40px;
     top: 10px;
   }
+
+  .menu-icon {
+   
+    font-size: 33px;
+    padding-top: 24px;
+  }
+
+  .header-container {
+    grid-template-columns: 20% 70% 10%;
+  }
+
+  .section.section2 {
+    grid-template-columns: 10% 40% 50%;
+    grid-template-rows: 90% 30%;
+  }
+  
  }
 
 /* Extra large devices (large desktops, 1200px and up) */

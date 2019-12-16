@@ -21,7 +21,6 @@ class WebsiteMenu extends React.Component {
 
     render() {
         return <div className="header-container">
-            <img id="floyd-logo-outline" src={FloydLogo} alt="floyd-logo"></img>
             <div></div>
             <div className="menu-icon">
                 <FontAwesomeIcon id="fa-menu-icon" icon={faBars} />
